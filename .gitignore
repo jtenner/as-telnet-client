@@ -1,0 +1,4 @@
+client.config.js
+node_modules
+build
+package-lock.json

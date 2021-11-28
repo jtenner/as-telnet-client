@@ -1,0 +1,24 @@
+{
+  "name": "mud-client",
+  "version": "1.0.0",
+  "description": "A simple easy to configure mud client powered by AssemblyScript",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "node tests",
+    "asbuild:untouched": "asc assembly/index.ts --target debug",
+    "asbuild:optimized": "asc assembly/index.ts --target release",
+    "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@assemblyscript/loader": "^0.19.20",
+    "as-telnet": "^0.0.1",
+    "blessed": "^0.1.81",
+    "configinator": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/blessed": "^0.1.19",
+    "assemblyscript": "^0.19.20"
+  }
+}
